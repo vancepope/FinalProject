@@ -1,0 +1,116 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollViewLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="pope.com.finalproject.EmailFragment">
+
+    <LinearLayout
+        android:id="@+id/emailLayout"
+        style="@style/linearVertical">
+
+        <!-- TODO: Update blank fragment layout -->
+
+        <LinearLayout
+            android:id="@+id/buttonLayout"
+            style="@style/linearHorizontal">
+
+            <Button
+                android:id="@+id/sendBtn"
+                style="@style/buttonBarButtonStyle"
+                android:text="@string/send"
+                android:textAlignment="viewStart" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/mailTvLayout"
+            style="@style/linearHorizontal">
+
+            <TextView
+                android:id="@+id/mailToTv"
+                style="@style/textViewCursive"
+                android:labelFor="@+id/emailEt"
+                android:text="@string/to"
+                android:textAlignment="viewStart" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/mailToLayout"
+            style="@style/linearHorizontal">
+
+            <EditText
+                android:id="@+id/mailToEt"
+                style="@style/editTextStyle"
+                android:inputType="textEmailAddress" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ccTvLayout"
+            style="@style/linearHorizontal">
+
+            <TextView
+                android:id="@+id/ccTv"
+                style="@style/textViewCursive"
+                android:labelFor="@+id/emailEt"
+                android:text="@string/cc"
+                android:textAlignment="textStart" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ccLayout"
+            style="@style/linearHorizontal">
+
+            <EditText
+                android:id="@+id/ccEt"
+                style="@style/editTextStyle" />
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/linearHorizontal">
+
+            <TextView
+                android:id="@+id/subjectTv"
+                style="@style/textViewCursive"
+                android:labelFor="@+id/emailEt"
+                android:text="@string/subject"
+                android:textAlignment="textStart" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/subjectLayout"
+            style="@style/linearHorizontal">
+
+            <EditText
+                android:id="@+id/subjectEt"
+                style="@style/editTextStyle"
+                android:inputType="textEmailSubject" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/messageTvLayout"
+            style="@style/linearHorizontal">
+
+            <TextView
+                android:id="@+id/messageTv"
+                style="@style/textViewCursive"
+                android:labelFor="@+id/emailEt"
+                android:text="@string/message"
+                android:textAlignment="textStart" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/messageLayout"
+            style="@style/linearHorizontal">
+
+            <EditText
+                android:id="@+id/messageEt"
+                style="@style/editTextStyle"
+                android:inputType="textMultiLine|textLongMessage"
+                android:selectAllOnFocus="false"
+                android:singleLine="false"
+                android:textAlignment="textStart" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        style="@style/linearHorizontal">
+
+        <TextView
+            android:id="@+id/listItemTv"
+            style="@style/textViewCursive"
+            android:text="@string/list_item" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout"
+        style="@style/linearHorizontal">
+
+        <TextView
+            android:id="@+id/subItemTv"
+            style="@style/textViewCursive"
+            android:text="@string/sub_item" />
+    </LinearLayout>
+</LinearLayout>

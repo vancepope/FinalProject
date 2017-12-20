@@ -1,0 +1,20 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="pope.com.finalproject.MessageFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        style="@style/linearHorizontal">
+        <EditText
+            android:id="@+id/messageEt2"
+            style="@style/editTextStyle"
+            android:inputType="textMultiLine"
+            android:maxLines="10"
+            android:minLines="5" />
+    </LinearLayout>
+
+
+</FrameLayout>

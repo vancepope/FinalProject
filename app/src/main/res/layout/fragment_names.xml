@@ -1,0 +1,81 @@
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:context="pope.com.finalproject.NamesFragment"
+        android:id="@+id/namesFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0"
+        android:background="#ffffff"
+        android:orientation="vertical">
+
+        <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        style="@style/linearHorizontal">
+        <TextView
+            android:id="@+id/nameTv"
+            style="@style/textViewCursiveNames"
+            android:labelFor="@+id/nameTv"
+            android:text="@string/name" />
+    </LinearLayout>
+
+    <LinearLayout
+            style="@style/linearHorizontal">
+            <EditText
+                android:id="@+id/nameEt"
+                style="@style/editTextStyle"
+                android:inputType="textPersonName"
+                android:labelFor="@id/nameEt"
+                android:selectAllOnFocus="false" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/linearHorizontal">
+            <TextView
+                android:id="@+id/emailTv"
+                style="@style/textViewCursiveNames"
+                android:labelFor="@+id/emailEt"
+                android:text="@string/email" />
+        </LinearLayout>
+
+    <LinearLayout
+        style="@style/linearHorizontal">
+        <EditText
+            android:id="@+id/emailEt"
+            style="@style/editTextStyle"
+            android:layout_weight="1"
+            android:inputType="textPersonName|textWebEmailAddress" />
+    </LinearLayout>
+
+    <LinearLayout
+            style="@style/linearHorizontal">
+            <Button
+                android:id="@+id/addBtn"
+                style="@style/buttonBarButtonStyle"
+                android:text="@string/add" />
+            <Button
+                android:id="@+id/resetBtn"
+                style="@style/buttonBarButtonStyle"
+                android:text="@string/reset" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/linearHorizontal">
+            <ListView
+                android:id="@+id/list"
+                style="@style/Widget.AppCompat.ListView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:listitem="@layout/list_items" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/linearHorizontal">
+            <Button
+                android:id="@+id/pickBtn"
+                style="@style/buttonBarButtonStyle"
+                android:text="@string/pick" />
+        </LinearLayout>
+
+    </LinearLayout>
